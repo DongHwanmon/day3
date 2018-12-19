@@ -174,15 +174,17 @@ print("=====Q4=====")
 #3. 2도와 같았던 적이 있다면 flag 변수를 true로 바꿔준다.
 #4. flag 변수에 따라 출력문을 작성한다.
 
-flag = false
+flag = "false"
 
 for city in cities:
-    if cities[city]=="서울":
+    if city=="서울":
         for temp in cities[city]:
             if temp == 2:
-                flag = true
+                flag = "true"
    
-    '''
+print("서울에서 2도였던 적은 {} 입니다.".format(flag))
+
+'''
     if temp == 2:
        reply = "Yes" 
 
